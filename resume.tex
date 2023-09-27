@@ -1,0 +1,138 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+\documentclass[12pt,letterpaper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{MnSymbol}
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage{hyperref}
+
+\hypersetup{
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    urlcolor=Sepia,           % color of external links
+}
+
+\begin{document}
+
+\name{Colin Cannell}
+\tagline{Seeking an Internship for Summer 2024}
+
+\personalinfo{
+    \normalsize
+    \github{\href{https://github.com/colin-cannell}{colin-cannell}}
+    \linkedin{\href{https://www.linkedin.com/in/colin-cannell-70117320a/}{colin-cannell}}
+    \printinfo{\faPhone}{781-361-1922}
+    \email{\href{mailto:ataulnoor75@gmail.com}{cjcannell35@gmail.com}}
+}
+
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection[page1sidebar]{Projects}
+
+\cvevent{Facial Recognition Attendance System}
+{\href
+    {https://github.com/colin-cannell/Facial-Recognition-Attendance}
+    {\textbf{Github}}
+}
+{}{}{}
+
+\begin{itemize}
+    \item Uses \textbf{Java} to access a connected camera then uses \textbf{OpenCV image processing} to scan the enviornment for faces
+    \item Processes each face using a custom trained \textbf{neural network} built using \textbf{TensorFlow} to mark attendance accordingly
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Java}
+\cvtag{Machine Learning}
+\cvtag{Image Processing}
+
+\smallskip
+\divider
+
+\cvevent{Super Auto Pets AI}
+{\href
+    {https://github.com/colin-cannell/SuperAutoPetsAI}
+    {\textbf{Github}}
+}
+{}{}{}
+
+\begin{itemize}
+    \item Video game AI
+    \item Uses \textbf{OpenCV} image processing to search the screen for game components
+    \item Uses \textbf{PyTorch neural networks} to learn how to play the game through reinforcement learning
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Data Science}
+\cvtag{Machine Learning}
+\cvtag{Image Processing}
+\cvtag{AI Decision Making}
+
+\smallskip
+\divider
+
+\cvevent{Workout App}
+{\href
+    {https://github.com/colin-cannell/WorkoutApp}
+    {\textbf{Github}}
+}{}{}{}
+\begin{itemize}
+    \item Creates custom workout for each muscle group
+    \item Allows users to track their calories by inputting the food they have eaten
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Javascript}
+\cvtag{HTML}
+\cvtag{CSS}
+
+\divider 
+
+\cvevent{Path Planning Programs}{}{}{}{}
+\begin{itemize}
+    \item Worked on and completed \textbf{Georgia Tech Graduate School} problems with my teacher in high school
+    \item Created various programs in high school that involved \textbf{path planning}
+    \item Used \textbf{statistics} and \textbf{problem solving} to find the location of the destination then find the path to it through space
+\end{itemize}
+
+\smallskip
+
+\cvtag{Python}
+\cvtag{Path Planning}
+\cvtag{Computer Vision}
+\cvtag{Depth First Search}
+\cvtag{Particle Filtering}
+\cvtag{Greedy Algorithm}
+
+
+
+
+
+
+\clearpage
+
+\end{document}
